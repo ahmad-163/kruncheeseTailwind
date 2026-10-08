@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div>
             <div className='bg-white'>
-                <nav className="bg-white border flex flex-row justify-between items-center w-[90%] mx-auto py-3 lg:py-4 gap-2">
+                <nav className="bg-white flex flex-row justify-between items-center w-[90%] mx-auto py-3 lg:py-4 gap-2">
                     <Link to='/location' className='order-2 flex-1 min-w-0 mx-2 lg:order-1 lg:flex-none lg:mx-0 lg:w-72'><div className='w-full flex flex-row items-center justify-around bg-gray-100 border-2 border-[#ebebeb] hover:shadow-lg hover:shadow-[#ebebeb] duration-200 rounded-full py-2'>
                         <span className="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#C40013" className="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" /></svg></span>
                         <div className="min-w-0">
