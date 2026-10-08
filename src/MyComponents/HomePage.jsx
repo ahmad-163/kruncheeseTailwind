@@ -14,7 +14,7 @@ function HomePage() {
 
     return (
         <div className="bg-[#F2F3F4]">
-            <div className="sticky top-0 z-50 lg:mt-6">
+            <div className="sticky top-0 z-50 ">
                 <TopBar />
             </div>
             <BuyOneGetOne variant="home" />
