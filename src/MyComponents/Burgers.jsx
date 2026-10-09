@@ -29,7 +29,7 @@ function Burgers({ variant = "page" }) {
                                     <hr className="w-[90%] border-t border-gray-200 mt-6" />
                                     <p className="font-medium text-[10px] lg:text-[10px] xl:text-xs text-[#C40013] line-through h-[20px] p-1">{t.pprice}</p>
                                     <p className="font-bold text-xs lg:text-sm p-1"> Rs. {t.price}.00</p>
-                                    <button className="bg-[#C40013] duration-300 rounded-3xl text-white hover:text-[#C40013] hover:bg-white font-bold px-3 py-2 text-xs sm:text-sm whitespace-nowrap"> Add To Cart</button>
+                                   <Link to='/productcard'><button className="bg-[#C40013] duration-300 rounded-3xl text-white hover:text-[#C40013] hover:bg-white font-bold px-3 py-2 text-xs sm:text-sm whitespace-nowrap"> Add To Cart</button></Link> 
                                 </div>
                             </div>))}
                     </div>

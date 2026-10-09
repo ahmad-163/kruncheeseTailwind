@@ -7,6 +7,7 @@ import Sides from "./MyComponents/Sides";
 import Dips from "./MyComponents/Dips";
 import Drinks from "./MyComponents/Drinks";
 import BuyOneGetOne from "./MyComponents/BuyOneGetOne";
+import ProductCard from "./MyComponents/ProductCard";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
 import Location from "./pages/Location";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/profile" element={<Profile />} />
         <Route path='/location' element={<Location />}/>
+        <Route path ='/productcard' element={<ProductCard/>}/>
       </Routes>
       </main>
       <Footer/>
