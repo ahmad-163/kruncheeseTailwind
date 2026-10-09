@@ -17,12 +17,7 @@ function TopBar() {
         <div className="bg-[#C40013] py-3 lg:py-4">
             <div className="flex flex-row items-center gap-2 sm:gap-3 w-full max-w-7xl mx-auto overflow-x-auto px-4 justify-start lg:justify-center no-scrollbar">
                 {categories.map((c, i) => (
-                    <Link
-                        key={i}
-                        to={c.to}
-                        onClick={() => setActive(i)}
-                        className={`shrink-0 rounded-full px-3 sm:px-4 py-1.5 text-sm sm:text-base font-medium whitespace-nowrap duration-200 hover:bg-white hover:text-[#C40013] ${active === i ? 'bg-white text-[#C40013]' : 'text-white bg-gray-800/10'}`}
-                    >{c.name}</Link>
+                    <Link key={i} to={c.to} onClick={() => setActive(i)} className={`shrink-0 rounded-full px-3 sm:px-4 py-1.5 text-sm sm:text-base font-medium whitespace-nowrap duration-200 hover:bg-white hover:text-[#C40013] ${active === i ? 'bg-white text-[#C40013]' : 'text-white bg-gray-800/10'}`}>{c.name}</Link>
                 ))}
             </div>
         </div>

@@ -7,7 +7,7 @@ function Navbar() {
         <div>
             <div className='bg-white'>
                 <nav className="bg-white flex flex-row justify-between items-center w-[90%] mx-auto py-3 lg:py-4 gap-2">
-                    <Link to='/location' className='order-2 flex-1 min-w-0 mx-2 lg:order-1 lg:flex-none lg:mx-0 lg:w-72'><div className='w-full flex flex-row items-center justify-around bg-gray-100 border-2 border-[#ebebeb] hover:shadow-lg hover:shadow-[#ebebeb] duration-200 rounded-full py-2'>
+                      <Link to='/location' className='order-2 flex-1 min-w-0 mx-2 lg:order-1 lg:flex-none lg:mx-0 lg:w-72'><div className='flex flex-row items-center justify-center bg-gray-100 border-2 border-[#ebebeb] hover:shadow-lg hover:shadow-[#ebebeb] duration-200 rounded-full py-2 gap-4 px-4'>
                         <span className="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#C40013" className="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" /></svg></span>
                         <div className="min-w-0">
                             <p className='text-xs font-medium text-black flex flex-row justify-start items-center'>Delivery to <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" /></svg></span></p>
