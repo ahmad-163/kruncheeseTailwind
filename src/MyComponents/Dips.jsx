@@ -25,8 +25,8 @@ function Dips({ variant = "page" }) {
                                <Link className="w-full" to='/dips'><img src='/dipsbanner.jpg' className="rounded-3xl w-full" /></Link>
                            </div>
                     <div className={`grid ${gridVariants[variant]}`}>
-                               {dips.map((t, i) => (
-                                   <div key={i} className="bg-white rounded-2xl p-2.5 m-2 ease-in duration-50 shadow-lg border border-transparent hover:border hover:border-[#C40013] hover:shadow-xl hover:shadow-[#ebebeb] hover:scale-101">
+                               {dips.map((t) => (
+                                   <div className="bg-white rounded-2xl p-2.5 m-2 ease-in duration-50 shadow-lg border border-transparent hover:border hover:border-[#C40013] hover:shadow-xl hover:shadow-[#ebebeb] hover:scale-101">
                                        <div className="overflow-hidden rounded-xl">
                                            <img src={t.image} className="h-[130px] w-full md:h-[190px] lg:h-[230px] xl:h-[250px] 2xl:h-[200px] hover:scale-110 duration-300 rounded-xl object-cover object-center" />
                                        </div>
