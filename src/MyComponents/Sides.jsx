@@ -1,27 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { gridVariants } from './GridVariants'
+import { gridVariants } from '../utils/GridVariants'
+import {sides} from '../data/Constant'
 
 
 function Sides({ variant = "page" }) {
-    const sides = [
-        { image: '/buy.jpeg', name: 'Krispy Strips', details: '3 Pieces of Krispy Strips', pprice: 'Rs. 699.00', price: '599' },
-        { image: '/buy.jpeg', name: 'Tender Bites', details: '9 Pieces of Tender Bites', pprice: '', price: '449' },
-        { image: '/buy.jpeg', name: 'Fried Chicken', details: 'Krispy Fried Chicken', pprice: '', price: '349' },
-        { image: '/buy.jpeg', name: 'Plain Fries', details: 'Crispy Plain Fries', pprice: '', price: '340' },
-        { image: '/buy.jpeg', name: 'Masala Fries', details: 'Crispy Fries with Masala Seasoning', pprice: '', price: '370' },
-        { image: '/buy.jpeg', name: 'Jalapeno Fries', details: 'Crispy Fries with Jalapeno Seasoning', pprice: '', price: '370' },
-        { image: '/buy.jpeg', name: 'Nuggets', details: '6 Pieces of Chicken Nuggets', pprice: '', price: '399' },
-        { image: '/buy.jpeg', name: 'Plain Wings', details: '8 Golden Fried Wings with a Light Savory Seasoning', pprice: '', price: '649' },
-        { image: '/buy.jpeg', name: 'BBQ Wings', details: '8 Krispy Wings Smothered in Rich Smoky Barbecue Sauce', pprice: 'Rs. 699.00', price: '649' },
-        { image: '/buy.jpeg', name: 'Thai Wings', details: '8 Crispy Wings with Thai Style Flavor', pprice: '', price: '649' },
-        { image: '/buy.jpeg', name: 'Sweet & Tangy Wings', details: '8 Crispy Wings Coated with Sweet and Tangy Sauce', pprice: '', price: '649' },
-        { image: '/buy.jpeg', name: 'Buffalo Wings', details: '8 Crispy Wings Coated with Buffalo Sauce', pprice: '', price: '649' },
-        { image: '/buy.jpeg', name: 'Masala Wings', details: '8 Crispy Wings with Masala Seasoning', pprice: 'Rs. 699.00', price: '649' },
-        { image: '/buy.jpeg', name: 'Fiery Wings', details: '8 Wings Tossed in a Fiery Hot Seasoning', pprice: '', price: '649' },
-        { image: '/buy.jpeg', name: 'Jalapeno Wings', details: '8 Fried Wings with Jalapeno Flavor', pprice: '', price: '649' },
-        { image: '/buy.jpeg', name: 'Salsa Sizzle Wings', details: '8 Fried Wings with Salsa Sizzle Flavor', pprice: '', price: '649' },
-    ]
 
     return (
          <div className="bg-[#F2F3F4]">

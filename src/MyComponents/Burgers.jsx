@@ -1,17 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { gridVariants } from './GridVariants'
+import { gridVariants } from '../utils/GridVariants'
+import { burgers } from '../data/Constant'
 
 
 function Burgers({ variant = "page" }) {
-    const burgers = [
-            { image: '/p (3).jpg', name: 'Stunner Burger', details: 'A crispy chicken fillet meets fresh lettuce and a creamy mayo sauce inside a soft bun', pprice: '', price: '549' },
-            { image: '/p (4).jpg', name: 'Massive Burger', details: 'An oversized ultra-crispy chicken fillet with fresh lettuce and a generous drizzle of house sauce', pprice: '', price: '849' },
-            { image: '/p (5).jpg', name: 'Krispy Tower Burger', details: 'Crispy chicken fillet stacked with extra crunch, melted cheese, jalapeños and fresh greens in a soft bun', pprice: '', price: '649' },
-            { image: '/p (6).jpg', name: 'Wish Burger', details: 'Crispy chicken fillet topped with cheddar and a chicken patty finished with smoky BBQ sauce', pprice: '', price: '649' },
-            { image: '/p (7).jpg', name: 'Krisp Burger', details: 'Golden crispy chicken fillet layered with crisp lettuce, cool mayo and signature sauce', pprice: '', price: '399' },
-            { image: '/p (8).jpg', name: 'Stud Burger', details: 'Stud Burger', pprice: '', price: '249' },
-    ]
 
     return (
          <div className="bg-[#F2F3F4]">

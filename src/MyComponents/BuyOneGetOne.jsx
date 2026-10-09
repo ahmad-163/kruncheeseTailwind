@@ -1,12 +1,8 @@
 import React from 'react'
-import { gridVariants } from './GridVariants'
-
+import { gridVariants } from '../utils/GridVariants'
+import {buyonegetone} from '../data/Constant'
 
 function BuyOneGetOne({ variant = "page" }) {
-
-    const buyonegetone = [
-        { image: '/buy.jpeg', name: 'BOGO DEAL', details: 'Buy one get one free Krisp Burger', pprice: '', price: '399' }
-    ]
 
     return (
         <div className="bg-[#F2F3F4]">

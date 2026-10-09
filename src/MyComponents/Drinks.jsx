@@ -1,21 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { gridVariants } from './GridVariants'
+import { gridVariants } from '../utils/GridVariants'
+import {drinks} from '../data/Constant'
 
 
 function Drinks({ variant = "page" }) {
-    const drinks = [
-        { image: '/buy.jpeg', name: '7UP - 345 ML', details: 'Cold Drink', pprice: '', price: '150' },
-        { image: '/buy.jpeg', name: 'Aquafina - 500 ML', details: 'Water', pprice: 'Rs. 699.00', price: '79' },
-        { image: '/buy.jpeg', name: 'Aquafina - 1.5 Litre', details: 'Water', pprice: '', price: '149' },
-        { image: '/buy.jpeg', name: 'Pepsi - 1.5 Litres', details: 'Cold Drink', pprice: '', price: '299' },
-        { image: '/buy.jpeg', name: 'Marinda - 1.5 Litres', details: 'Cold Drink', pprice: '', price: '299' },
-        { image: '/buy.jpeg', name: '7UP - 1.5 Litres', details: 'Cold Drink', pprice: 'Rs. 699.00', price: '299' },
-        { image: '/buy.jpeg', name: '7UP Zero - 1.5 Litres', details: 'Sugar Free Cold Drink', pprice: '', price: '299' },
-        { image: '/buy.jpeg', name: 'Mountain Dew - 1.5 Litres', details: 'Cold Drink', pprice: '', price: '299' },
-        { image: '/buy.jpeg', name: 'Mountain Dew - 345 ML', details: 'Cold Drink', pprice: '', price: '150' },
-        { image: '/buy.jpeg', name: 'Marinda - 345 ML', details: 'Cold Drink', pprice: '', price: '150' },
-    ]
+   
     return (
 
         <div className="bg-[#F2F3F4]">

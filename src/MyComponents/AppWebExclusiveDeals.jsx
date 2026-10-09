@@ -1,11 +1,8 @@
 import React from 'react'
-import { gridVariants } from './GridVariants'
+import { gridVariants } from '../utils/GridVariants'
+import { appWebExclusiveDeals } from '../data/Constant'
 
 function AppWebExclusiveDeals({ variant = "page" }) {
-
-    const AppWebExclusiveDeals = [
-        { image: '/buy.jpeg', name: 'Midnight Wish with Drink', details: 'Enjoy a Wish Burger with a drink', pprice: '', price: '599' },
-    ]
 
     return (
         <div className="bg-[#F2F3F4]">
@@ -16,7 +13,7 @@ function AppWebExclusiveDeals({ variant = "page" }) {
                 </div>
                 <div className='flex flex-col justify-between items-center'>
                     <div className={`grid ${gridVariants[variant]}`}>
-                        {AppWebExclusiveDeals.map((t) => (
+                        {appWebExclusiveDeals.map((t) => (
                             <div className="bg-white rounded-2xl p-2.5 m-2 ease-in duration-200 shadow-lg border border-transparent hover:border hover:border-[#C40013] hover:shadow-xl hover:shadow-[#ebebeb] hover:scale-101">
                                 <div className="overflow-hidden rounded-xl">
                                     <img src={t.image} className="h-[130px] w-full md:h-[190px] lg:h-[230px] xl:h-[250px] 2xl:h-[200px] hover:scale-110 duration-300 rounded-xl object-cover object-center" />

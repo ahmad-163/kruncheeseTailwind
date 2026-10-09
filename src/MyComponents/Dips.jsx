@@ -1,16 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { gridVariants } from './GridVariants'
+import { gridVariants } from '../utils/GridVariants'
+import { dips } from '../data/Constant'
 
 
 function Dips({ variant = "page" }) {
-    const dips = [
-        { image: '/buy.jpeg', name: 'Ranch Dip', details: 'Ranch Dip Sauce', pprice: '', price: '79' },
-        { image: '/buy.jpeg', name: 'Tropical Dip', details: 'Tropical Sauce', pprice: 'Rs. 699.00', price: '79' },
-        { image: '/buy.jpeg', name: 'Mayo Dip', details: 'Mayo Sauce', pprice: '', price: '79' },
-        { image: '/buy.jpeg', name: 'Sweet Thai Chili', details: 'Sweet Thai Chili Sauce', pprice: '', price: '79' },
-        { image: '/buy.jpeg', name: 'BBQ Dip', details: 'BBQ Sauce', pprice: '', price: '79' }
-    ]
+    
 
     return (
 

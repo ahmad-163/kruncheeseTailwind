@@ -1,24 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { gridVariants } from './GridVariants'
+import { gridVariants } from '../utils/GridVariants'
+import {pizza} from '../data/Constant'
 
 
 function Pizza({ variant = "page" }) {
-
-    const pizza = [
-        { image: '/p (17).png', name: 'Cheese Lover Pizza', details: 'A timeless classic loaded with rich pizza sauce and layers of creamy mozzarella cheese', pprice: '', price: '699' },
-        { image: '/p (18).png', name: 'Ranchstar Pizza', details: 'Creamy ranch sauce, mozzarella cheese, fajita chicken, green peppers, onions, jalapeños, black olives and ranch drizzle', pprice: 'Rs. 699.00', price: '699' },
-        { image: '/p (19).png', name: 'Veggie Pizza', details: 'Pizza sauce, mozzarella cheese, green peppers, onions, mushrooms, black olives and juicy tomatoes', pprice: '', price: '699' },
-        { image: '/p (20).png', name: 'Peri Peri Pizza', details: 'Cheddar slices, mozzarella cheese, peri peri chicken, onions, tomatoes, red jalapeños and peri peri sauce', pprice: '', price: '699' },
-        { image: '/p (21).png', name: 'Malai Boti Pizza', details: 'Creamy malai boti sauce, mozzarella cheese, tender malai boti chicken, green peppers and onions', pprice: 'Rs. 699.00', price: '699' },
-        { image: '/p (22).png', name: 'Fajita Pizza', details: 'Pizza sauce, mozzarella cheese, zesty fajita chicken, fresh onions and crunchy green peppers', pprice: '', price: '699' },
-        { image: '/p (23).png', name: 'Smokey BBQ Pizza', details: 'Smoky ranch sauce, mozzarella cheese, smoked chicken, sweet onions and BBQ sauce', pprice: '', price: '699' },
-        { image: '/p (2).png', name: 'Chicken Tikka Pizza', details: 'Tangy pizza sauce, mozzarella cheese, tender chicken tikka and crisp onions', pprice: 'Rs. 699.00', price: '699' },
-        { image: '/p (5).png', name: 'Sriracha Fusion Pizza', details: 'Spicy sriracha mayo base, mozzarella cheese, fajita chicken, red jalapeños, onions, green peppers and sriracha drizzle', pprice: '', price: '699' },
-        { image: '/p (6).png', name: 'Super Supreme Pizza', details: 'Pizza sauce, mozzarella cheese, chicken sausages, tikka chicken, smoked chicken, green peppers, onions, mushrooms and black olives', pprice: '', price: '699' },
-        { image: '/p (7).png', name: 'Euro Cheese Pizza', details: 'Pizza sauce, mozzarella cheese, smoked chicken, chicken sausages, green peppers, mushrooms, black olives and tomatoes', pprice: '', price: '699' },
-        { image: '/p (8).png', name: 'Chicken Shawarma Pizza', details: 'Shawarma sauce, mozzarella cheese, fajita chicken, onions, tomatoes, vinegar pickle and mayonnaise drizzle', pprice: '', price: '699' },
-    ]
 
     return (
          <div className="bg-[#F2F3F4]">

@@ -1,27 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { gridVariants } from './GridVariants'
+import { gridVariants } from '../utils/GridVariants'
+import { deals } from '../data/Constant'
 
 function Deals({ variant = "page" }) {
 
-    const deals = [
-        { image: '/p (1).png', name: 'Small Pizza', details: 'Small Classic Pizza', pprice: 'Rs. 699.00', price: '399' },
-        { image: '/p (2).png', name: 'Krisp Krave Combo', details: 'Krisp Burger, Fries and Drink', pprice: '', price: '590' },
-        { image: '/p (3).png', name: 'Krisp Double Krunch Combo', details: 'Krisp Burger, One Chicken Piece and Drink', pprice: '', price: '680' },
-        { image: '/p (4).png', name: 'Krispy Box', details: '2 Chicken Pieces, Fries and Drink', pprice: '', price: '690' },
-        { image: '/p (5).png', name: 'Krunch Trio', details: '3 Chicken Pieces', pprice: '', price: '740' },
-        { image: '/p (6).png', name: 'Solo Box', details: 'Stunner, Fried Chicken, Fries and Regular Drink', pprice: 'Rs. 699.00', price: '999' },
-        { image: '/p (7).png', name: 'Pair Box', details: '2 Stunners, 2 Pieces Fried Chicken, Large Fries and 2 Regular Drinks', pprice: '', price: '1660' },
-        { image: '/p (8).png', name: 'Squad Box', details: '4 Stunners, 4 Pieces Fried Chicken and 1.5 Litre Drink', pprice: '', price: '2699' },
-        { image: '/p (9).png', name: 'Deal 1', details: 'Small Pizza and Drink', pprice: '', price: '649' },
-        { image: '/p (10).png', name: 'Get Stunned Combo', details: 'Stunner plus Regular Fries and Small Drink', pprice: 'Rs. 699.00', price: '699' },
-        { image: '/p (11).png', name: '9pcs Chicken Bucket', details: '9 Pieces of Krispy Fried Chicken', pprice: '', price: '1599' },
-        { image: '/p (12).png', name: 'Krisp & Sip Combo', details: 'Signature Krisp Burger served hot and crispy with a refreshing drink', pprice: '', price: '349' },
-        { image: '/p (13).png', name: 'Delicious Deal 2', details: '4 Krisp Burgers, 4 Chicken Pieces and 1 Large Drink', pprice: '', price: '1899' },
-        { image: '/p (14).png', name: 'Deal 2', details: 'Medium Pizza and 2 Regular Drinks', pprice: '', price: '999' },
-        { image: '/p (15).png', name: 'Deal 3', details: 'Large Pizza and Large Drink', pprice: '', price: '1399' },
-        { image: '/p (16).png', name: 'Krispy Chicken Deal', details: 'Krispy Chicken Deal', pprice: 'Rs. 1696', price: '1001' },
-    ]
+  
     return (
         <div className="bg-[#F2F3F4]">
             <div className="flex flex-col justify-between">
